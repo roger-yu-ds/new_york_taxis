@@ -5,7 +5,7 @@ services:
         build:
             context: .
             dockerfile: ./Dockerfile
-        container_name: jupyter_docker_lab_4
+        container_name: jupyter_pyspark
         ports:
             - "8888:8888"
         env_file:
