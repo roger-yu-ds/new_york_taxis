@@ -99,4 +99,4 @@ RUN echo "export PYTHONPATH=/home/jovyan/work" >> ~/.bashrc
 
 WORKDIR /home/jovyan/work
 
-ENV SPARK_DRIVER_MEMORY="22g"
+ENV SPARK_DRIVER_MEMORY="24g"
