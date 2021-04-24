@@ -98,3 +98,5 @@ ENV PYTHONPATH "${PYTHONPATH}:/home/jovyan/work"
 RUN echo "export PYTHONPATH=/home/jovyan/work" >> ~/.bashrc
 
 WORKDIR /home/jovyan/work
+
+ENV SPARK_DRIVER_MEMORY="12g"
