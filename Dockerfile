@@ -80,11 +80,18 @@ RUN chmod 644 $SPARK_HOME/jars/spark-avro_2.11-2.4.4.jar
 
 USER $NB_UID
 
+RUN conda install python=3.7
+
 RUN pip install py4j \
     && pip install boto3==1.16.5 \
     && pip install pyarrow==2.0.0 \
     && pip install findspark==1.4.2 \
-    && pip install pyspark==2.4.5
+    && pip install pyspark==2.4.5 \
+	&& pip install scipy==1.6.1 \
+	&& pip install pandas-profiling \
+	&& pip install python-dotenv \
+ 	&& pip install jupyterlab==3 \
+	&& pip install jupyterlab_execute_time
 
 ENV PYTHONPATH "${PYTHONPATH}:/home/jovyan/work"
 
