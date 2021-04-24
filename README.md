@@ -1,10 +1,12 @@
-new_york_taxis
-==============================
+# new_york_taxis
 
 Analysing the New York Taxi data using PySpark.
 
-Project Organization
-------------
+# Requirements
+* `.env` file
+* Docker
+
+# Project Organization
 
     ├── LICENSE
     ├── Makefile           <- Makefile with commands like `make data` or `make train`
