@@ -60,7 +60,7 @@ RUN curl -sL --retry 3 \
 WORKDIR /usr/local
 
 # Configure Spark
-ENV SPARK_OPTS="--driver-java-options=-Xms1024M --driver-java-options=-Xmx4096M --driver-java-options=-Dlog4j.logLevel=info" \
+ENV SPARK_OPTS="--driver-java-options=-Xms1024M --driver-java-options=-Xmx16384M --driver-java-options=-Dlog4j.logLevel=info" \
     PATH=$PATH:$SPARK_HOME/bin
 
 RUN ln -s "${SPARK_PACKAGE}" spark && \
