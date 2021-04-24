@@ -1,4 +1,4 @@
-FROM jupyter/scipy-notebook:0ce64578df46 as build
+FROM jupyter/scipy-notebook:latest as build
 
 LABEL maintainer="Jupyter Project <jupyter@googlegroups.com>"
 
